@@ -1,9 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { DatePicker,Button, Typography, Space  } from 'antd';
 
+import 'antd/dist/antd.css';
+
+const { Text, Link } = Typography;
+
+const App = ()=>{
+  return ( 
+  <React.Fragment>
+    <h1>Hello World ? What's up ?
+    <Text type="danger">Ant Design (danger)</Text>
+    <Button type="primary">Primary Button</Button>
+</h1>
+
+<DatePicker />
+
+  </React.Fragment>
+    );
+}
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -11,7 +26,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
